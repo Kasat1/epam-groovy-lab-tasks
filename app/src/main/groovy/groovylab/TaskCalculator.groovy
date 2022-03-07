@@ -6,8 +6,13 @@ TaskCalculator.exec("1+9/3") == 4
 
 package groovylab
 
+import java.math.BigDecimal
+
 class TaskCalculator {
     public static Number exec(String expression) {
-        throw UnsupportedOperationException('Not Implemented!')
+        return BigDecimal(expression)
     }
+    static void main(String[] args) {
+      println TaskCalculator.exec(1+9/3)
+} 
 }

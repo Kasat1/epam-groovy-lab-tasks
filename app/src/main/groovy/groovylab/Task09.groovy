@@ -8,6 +8,9 @@ package groovylab
 
 class Task09 {
     public static String exec(String command) {
-        throw UnsupportedOperationException('Not Implemented!')
+        return command.execute().text.trim()
     }
+//     static void main(String[] args) {
+//       println Task09.exec("pwd")
+// }
 }

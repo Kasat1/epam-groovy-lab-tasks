@@ -7,7 +7,12 @@ Task04.fib(4) == 3
 package groovylab
 
 class Task04 {
-    public static int fib(int n) {
-        throw UnsupportedOperationException('Not Implemented!')
-    }
+    public static int fib(int n) { 
+    if (n == 0){return 0}
+    if (n == 1){return 1}
+    else{return fib(n-1) + fib(n-2)}
+}
+//     static void main(String[] args) {
+//         println Task04.fib(6)
+// }
 }
